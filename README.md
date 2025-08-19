@@ -35,5 +35,3 @@ Here are some of the areas I’ve explored (and will continue updating):
   Recovery Services Vault, snapshots, and replication.  
 
 --- 
-
-## 📂 Repository Structure
