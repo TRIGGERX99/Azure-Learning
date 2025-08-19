@@ -1,0 +1,124 @@
+# 📘 Manage Microsoft Entra ID Identities - Notes
+
+## 1. What is Microsoft Entra ID?
+- Microsoft **Entra ID** (formerly Azure AD) = Cloud-based **identity & access management**.
+- Think of it like a **digital ID card system** for your company.
+- It verifies **who you are** and controls **what you can access**.
+
+**Example:**  
+When you log in to Outlook or Teams with your work email → Entra ID checks your identity.
+
+---
+
+## 2. Users
+- **Member Users** → Employees in your company.  
+- **Guest Users** → External people (vendors, partners, contractors).  
+
+**Actions:**
+- Create user → Give username + temp password.  
+- Reset password → If forgotten.  
+- Block sign-in → If account is hacked.  
+- Delete user → If employee leaves.  
+
+**Example:**  
+- Alice (employee) = Member user.  
+- Bob (freelancer) = Guest user.
+
+---
+
+## 3. Groups
+- Groups = Collection of users.  
+- Assign permissions **to the group**, not each person.  
+
+**Types:**
+1. Security Groups → Manage access to resources.  
+2. Microsoft 365 Groups → Collaboration (mailbox, Teams, SharePoint).  
+
+**Example:**  
+- IT Group → access to management tools.  
+- HR Group → access to HR apps.
+
+---
+
+## 4. Roles
+- Define **what actions someone can do**.  
+- Built-in roles available.
+
+**Common Roles:**
+- Global Admin → Full control.  
+- User Admin → Manage users/groups.  
+- Password Admin → Reset passwords.  
+
+⚠️ Best practice: Use **least privilege** (give only what is needed).
+
+---
+
+## 5. Devices
+- Devices (laptops, phones) can be registered.  
+- Helps enforce compliance & security rules.
+
+**Example:**  
+- Company laptop = allowed.  
+- Unknown personal device = blocked.
+
+---
+
+## 6. External Identities
+- Allows **partners/guests** to use their own account to access your apps.  
+- No need to create a new account for them.
+
+**Example:**  
+Invite consultant → They log in with Gmail/Company account → Access shared resources.
+
+---
+
+## 7. Self-Service
+- **SSPR (Self-Service Password Reset):** Users reset their own password.  
+- **Group Management:** Users request to join groups, owners approve.
+
+**Example:**  
+Alice resets her password via phone verification → No IT help needed.
+
+---
+
+## 8. Authentication
+- **Single Factor (SFA):** Just a password.  
+- **Multi-Factor (MFA):** Password + phone code, app, fingerprint.  
+- MFA = much stronger.
+
+**Example:**  
+Alice logs in with password + mobile app confirmation.
+
+---
+
+## 9. Conditional Access
+- Rules that control login access.  
+- Conditions: location, device, risk level.
+
+**Examples:**  
+- Block login from unknown countries.  
+- Require MFA outside company network.  
+- Allow only compliant devices.
+
+---
+
+## 10. Monitoring & Reports
+- Track sign-ins: who, where, success/fail.  
+- Detect suspicious logins.
+
+**Example:**  
+Multiple failed logins from another country → possible hacker → block account.
+
+---
+
+## 📝 Recap
+- Users = People.  
+- Groups = Bundles of users.  
+- Roles = Permissions.  
+- Devices = Registered hardware.  
+- External Identities = Guests/partners.  
+- Self-Service = Reset password & group join.  
+- Authentication = MFA for safety.  
+- Conditional Access = Smart rules.  
+- Reports = Monitor activity.
+
